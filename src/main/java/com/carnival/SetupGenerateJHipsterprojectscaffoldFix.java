@@ -1,12 +1,13 @@
-// 1. **Navigate to the correct project directory:** Ensure you are in the root directory of your Maven project, which is the directory containing the 'pom.xml' file.
+// 1. **Navigate to the Project Root:** Ensure you are in the top-level directory of your Maven project – the one that directly contains the `pom.xml` file. 
 //    Example: `cd /path/to/your/maven/project`
 //
-// 2. **Verify 'pom.xml' existence and name:** Check if the file 'pom.xml' (lowercase 'p', 'o', 'm') actually exists in the current directory. On some operating systems, file names are case-sensitive.
+// 2. **Verify `pom.xml` Existence and Naming:** Check if a file named `pom.xml` (case-sensitive) exists in the current directory.
 //    Example (Linux/macOS): `ls -l pom.xml`
-//    Example (Windows PowerShell): `Get-Item pom.xml`
+//    Example (Windows): `dir pom.xml`
 //
-// 3. **Restore or create 'pom.xml':**
-//    *   If the file is missing, try restoring it from your version control system (e.g., `git checkout HEAD -- pom.xml`).
-//    *   If it's a new project, you might need to create a basic 'pom.xml' or generate a project archetype (e.g., `mvn archetype:generate`).
+// 3. **Restore/Create `pom.xml`:** If the file is missing, restore it from your version control system (e.g., Git) or create a new basic `pom.xml` if you're setting up a new project.
 //
-// 4. **Re-run the build command:** Once 'pom.xml' is correctly located in the project root, try executing your Maven build command again (e.g., `mvn clean install`).
+// 4. **Explicitly Specify `pom.xml` Path:** If your `pom.xml` is located in a subdirectory or a different path, you can use the `-f` (or `--file`) option:
+//    Example: `mvn -f myproject/pom.xml clean install`
+//
+// 5. **Check Permissions:** Ensure the user running the Maven command has read permissions for the `pom.xml` file and its containing directories.
