@@ -1,0 +1,18 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "baseName": "projet26",
+    "clientFramework": "angular",
+    "devDatabaseType": "h2Disk",
+    "entities": ["Product", "Category"],
+    "jhipsterVersion": "8.11.0",
+    "jwtSecretKey": "MDg4ZDhlMDgzMzE3ODkwNzM0MDE4NDY3NGI5ZTU1MjJlMWFhZjVlNWEzMzkyODZmOGY4Y2YzMWY3ZDU0MzliOGFkOGYyYmI0MTUwMjA5YTQwMGI1NjE3Y2VkNzg0ZGZhMzI2Y2FjYjRmMDhiYjM5MWIwNGNiODExNWQ2OWRmYTQ=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1773962622000,
+    "nativeLanguage": "en",
+    "packageName": "com.projet26",
+    "prodDatabaseType": "postgresql",
+    "serverPort": "8081"
+  }
+}
