@@ -1,0 +1,27 @@
+application {
+  config {
+    serverPort 8081
+    baseName projet26
+    packageName com.projet26
+    applicationType monolith
+    authenticationType jwt
+    prodDatabaseType postgresql
+    devDatabaseType h2Disk
+    clientFramework angular
+  }
+  entities Product, Category
+}
+
+entity Product {
+  name String required
+  price BigDecimal required
+  stock Integer
+}
+
+entity Category {
+  name String required
+}
+
+relationship ManyToOne {
+  Product{category} to Category
+}
